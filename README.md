@@ -38,5 +38,5 @@ webRTC는 시그널링 서버를 구현하여 이 서버를 통해 서로 통신
 
 <br><br><br>
 
-<img src = "./img/img3.png" width ="70%" height="70%">
+<img src = "./img/result1.png" width ="70%" height="70%">
 클라이언트와 클라이언트끼리의 통신 (webRTC)
