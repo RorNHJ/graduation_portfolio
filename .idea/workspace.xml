@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7ea0c35-7172-4d7a-8483-7de81e8c96d2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/img1.png" afterPath="$PROJECT_DIR$/img/img1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/result1.png" afterPath="$PROJECT_DIR$/img/result1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -37,8 +37,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="126">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -775,7 +775,7 @@
       <workItem from="1495518036054" duration="7719000" />
       <workItem from="1495598760135" duration="1917000" />
       <workItem from="1495685007673" duration="7680000" />
-      <workItem from="1495737357550" duration="2312000" />
+      <workItem from="1495737357550" duration="2464000" />
     </task>
     <task id="LOCAL-00001" summary="디자인 추가">
       <created>1495737619848</created>
@@ -819,11 +819,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495739068281</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="이미지 변경">
+      <created>1495739711735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1495739711735</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103673000" />
+    <option name="totallyTimeSpent" value="103825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1238,8 +1245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
