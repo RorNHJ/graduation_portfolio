@@ -1,0 +1,23 @@
+body {
+    background: white;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-direction: column;
+}
+video {
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+#video {
+    width:1024px;
+    height:600px;
+}
+#videodiv {
+    position: relative;
+}
+#myvideodiv {
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+}
