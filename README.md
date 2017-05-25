@@ -26,7 +26,7 @@ webRTC는 시그널링 서버를 구현하여 이 서버를 통해 서로 통신
 <br>
  <img src = "./img/main.png">
 홈페이지 첫 화면
- <br><br><br>
+ <br><br>
 
 <img src = "./img/img4.png">
 사람과 배경 분리 과정
