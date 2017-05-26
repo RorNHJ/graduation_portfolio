@@ -526,10 +526,15 @@ function onAddStreamHandler2(evt) {
 };
 
 function endCall() {
-    peerConn.close();
-    peerConn = null;
-    peerConn2.close();
-    peerConn2 = null;
+
+    if (imRemote || imLocal) {
+        peerConn.close();
+        peerConn = null;
+    }
+    if (imRemote2 || imLocal2) {
+        peerConn2.close();
+        peerConn2 = null;
+    }
     videoCallButton.removeAttribute("disabled");
     endCallButton.setAttribute("disabled", true);
     if (localVideoStream) {
