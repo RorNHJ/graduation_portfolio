@@ -203,7 +203,17 @@ endCallButton.addEventListener("click", function (evt) {
 function getUserFace() {
     navigator.mediaDevices.getUserMedia({
         audio: true,
-        video: true
+        video: true,
+        "mandatory": {
+            googTypingNoiseDetection: false,
+            googEchoCancellation: false,
+            //googEchoCancellation2: false,
+            googAutoGainControl: false,
+            //googAutoGainControl2: false,
+            googNoiseSuppression: false,
+            //googNoiseSuppression2: false,
+            googHighpassFilter: false,
+        }
     })
         .then(gotStream2)
         .catch(function(e) {
