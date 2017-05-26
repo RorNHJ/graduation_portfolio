@@ -199,33 +199,40 @@ remoteUser.addEventListener("click", getUserFace);
 // endCallButton.addEventListener("click", function (evt) {
 //     wsc.send(JSON.stringify({"closeConnection": true }));
 // });
+var constraints = window.constraints = {
+    audio: true,
+    video: true
+};
+
+function handleSuccess(stream) {
+    console.log('Adding local stream.');
+    localVideo.src = window.URL.createObjectURL(stream);
+    localStream = stream;
+}
+
+function handleError(error) {
+    if (error.name === 'ConstraintNotSatisfiedError') {
+        errorMsg('The resolution ' + constraints.video.width.exact + 'x' +
+            constraints.video.width.exact + ' px is not supported by your device.');
+    } else if (error.name === 'PermissionDeniedError') {
+        errorMsg('Permissions have not been granted to use your camera and ' +
+            'microphone, you need to allow the page access to your devices in ' +
+            'order for the demo to work.');
+    }
+    errorMsg('getUserMedia error: ' + error.name, error);
+}
+
+function errorMsg(msg, error) {
+    errorElement.innerHTML += '<p>' + msg + '</p>';
+    if (typeof error !== 'undefined') {
+        console.error(error);
+    }
+}
 
 function getUserFace() {
-    navigator.mediaDevices.getUserMedia({
-        audio: true,
-        video: true,
-        "mandatory": {
-            googTypingNoiseDetection: false,
-            googEchoCancellation: false,
-            //googEchoCancellation2: false,
-            googAutoGainControl: false,
-            //googAutoGainControl2: false,
-            googNoiseSuppression: false,
-            //googNoiseSuppression2: false,
-            googHighpassFilter: false,
-        }
-    })
-        .then(gotStream2)
-        .catch(function(e) {
-            alert('getUserMedia() error: ' + e.name);
-        });
+    navigator.mediaDevices.getUserMedia(constraints).
+    then(handleSuccess).catch(handleError);
 
-    function gotStream2(stream) {
-        console.log('Adding local stream.');
-        localVideo.src = window.URL.createObjectURL(stream);
-        localStream = stream;
-
-    }
 
 }
 
