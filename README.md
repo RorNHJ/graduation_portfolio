@@ -24,11 +24,11 @@ webRTC는 시그널링 서버를 구현하여 이 서버를 통해 서로 통신
 영상 부분에서는 저는  인텔의 3d카메라로 이용하여 사람과 배경을 분리하였습니다. 3d카메라의 얼굴 추적 기능을 이용하여 얼굴을 추적하고, 얼굴 크기에 따라 미리 준비해놓은 사람모양의 탬플릿을 덮어씌워서 씌워지지 않는 부분을 배경으로 인식하고 제거하여 분리했습니다. 얼굴인식기능은 인텔사에서 제공하는 소스코드를 적용하였고, 분리해내는 부분을 템플릿의 색상을 이용하여 크로마키 기법을 분리했습니다.
 <br>
 <br>
- <img src = "./img/main.png">
+ <img src = "./img/main.png" width ="70%" height="70%">
 홈페이지 첫 화면
  <br><br><br>
 
-<img src = "./img/img4.png">
+<img src = "./img/img4.png" width ="70%" height="70%">
 사람과 배경 분리 과정
 <br><br><br>
 
@@ -37,9 +37,23 @@ webRTC는 시그널링 서버를 구현하여 이 서버를 통해 서로 통신
 <br><br><br>
 
 
-<img src = "./img/img2.png" width ="70%" height="70%">
+<img src = "./img/streaming.png" width ="70%" height="70%">
 서버와 클라이언트의 통신(webSocket)
 <br><br><br>
 
 <img src = "./img/result1.png" width ="70%" height="70%">
 클라이언트와 클라이언트끼리의 통신 (webRTC)
+<br><br><br>
+
+<div>
+<img src = "./img/zoomin1.png" width ="40%" height="40%">
+<img src = "./img/zoomin2.png" width ="40%" height="40%">
+</div>
+Zoom In 과 Zoom out 버튼 
+ 
+ <br><br><br>
+
+ <img src = "./img/drag1.png" width ="70%" height="70%">
+ mouse 드래그로 사람모습 위치 조정
+
+
