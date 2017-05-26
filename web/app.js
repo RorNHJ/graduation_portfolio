@@ -212,22 +212,16 @@ function handleSuccess(stream) {
 
 function handleError(error) {
     if (error.name === 'ConstraintNotSatisfiedError') {
-        errorMsg('The resolution ' + constraints.video.width.exact + 'x' +
+        console.log('The resolution ' + constraints.video.width.exact + 'x' +
             constraints.video.width.exact + ' px is not supported by your device.');
     } else if (error.name === 'PermissionDeniedError') {
-        errorMsg('Permissions have not been granted to use your camera and ' +
+        console.log('Permissions have not been granted to use your camera and ' +
             'microphone, you need to allow the page access to your devices in ' +
             'order for the demo to work.');
     }
-    errorMsg('getUserMedia error: ' + error.name, error);
+    console.log('getUserMedia error: ' + error.name, error);
 }
 
-function errorMsg(msg, error) {
-    errorElement.innerHTML += '<p>' + msg + '</p>';
-    if (typeof error !== 'undefined') {
-        console.error(error);
-    }
-}
 
 function getUserFace() {
     navigator.mediaDevices.getUserMedia(constraints).
