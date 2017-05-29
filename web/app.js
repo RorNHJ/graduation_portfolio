@@ -174,7 +174,7 @@ wsc.onmessage = function (evt) {
         }
         if (signal.closeConnection) {
             console.log("Received 'close call' signal from remote peer.");
-         //   endCall();
+           endCall();
         }
     }
 
@@ -188,7 +188,7 @@ var localStream ;
 var videoCallButton = document.getElementById("communication");
 var videoCallButton2 = document.getElementById("communication2");
 
-//var       endCallButton = document.getElementById("c_stop");
+var       endCallButton = document.getElementById("c_stop");
 var     localVideo = document.getElementById('localVideo');
 var     remoteVideo = document.getElementById('remoteVideo');
 var     remoteUser = document.getElementById('remoteUser');
@@ -501,7 +501,7 @@ function onIceCandidateHandler2(evt) {
 function onAddStreamHandler(evt) {
     console.log("onAddStreamHandler");
     videoCallButton.setAttribute("disabled", true);
-    //endCallButton.removeAttribute("disabled");
+    endCallButton.removeAttribute("disabled");
     // set remote video stream as source for remote video HTML5 element
     if(evt.stream){
          if(imLocal || imLocal2)
@@ -515,7 +515,7 @@ function onAddStreamHandler(evt) {
 function onAddStreamHandler2(evt) {
     console.log("onAddStreamHandler2");
     videoCallButton.setAttribute("disabled", true);
-   // endCallButton.removeAttribute("disabled");
+   endCallButton.removeAttribute("disabled");
     // set remote video stream as source for remote video HTML5 element
     if(evt.stream){
         if(imLocal || imLocal2)
@@ -525,29 +525,30 @@ function onAddStreamHandler2(evt) {
     }
 
 };
-//
-// function endCall() {
-//
-//     if (imRemote || imLocal) {
-//         peerConn.close();
-//         peerConn = null;
-//     }
-//     if (imRemote2 || imLocal2) {
-//         peerConn2.close();
-//         peerConn2 = null;
-//     }
-//     videoCallButton.removeAttribute("disabled");
-//   //  endCallButton.setAttribute("disabled", true);
-//     if (localVideoStream) {
-//         localVideoStream.getTracks().forEach(function (track) {
-//             track.stop();
-//         });
-//         // localVideo.src = "";
-//     }
-//
-//     if (remoteVideo) remoteVideo.src = "";
-//     if (localVideo) localVideo.src = "";
-// };
+
+function endCall() {
+
+    if (imRemote || imLocal) {
+        peerConn.close();
+        peerConn = null;
+    }
+    if (imRemote2 || imLocal2) {
+        peerConn2.close();
+        peerConn2 = null;
+    }
+    videoCallButton.removeAttribute("disabled");
+   endCallButton.setAttribute("disabled", true);
+    if (localVideoStream) {
+        localVideoStream.getTracks().forEach(function (track) {
+            track.stop();
+        });
+        // localVideo.src = "";
+    }
+    if (video) video.src = "";
+
+    if (remoteVideo) remoteVideo.src = "";
+    if (localVideo) localVideo.src = "";
+};
 
 
 // Launch webkitGetUserMedia() based on selected media id.

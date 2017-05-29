@@ -4,6 +4,7 @@
     <list default="true" id="a7ea0c35-7172-4d7a-8483-7de81e8c96d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.js" afterPath="$PROJECT_DIR$/web/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -49,8 +50,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="419" column="57" lean-forward="true" selection-start-line="419" selection-start-column="57" selection-end-line="419" selection-end-column="57" />
+            <state relative-caret-position="334">
+              <caret line="545" column="5" lean-forward="true" selection-start-line="545" selection-start-column="5" selection-end-line="545" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -72,8 +73,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+            <state relative-caret-position="152">
+              <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="85" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -111,6 +112,7 @@
       <find>closeConnection</find>
       <find>endCall</find>
       <find>initiateCall</find>
+      <find>endcall</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,8 +134,8 @@
         <option value="$PROJECT_DIR$/src/CameraViewer.java" />
         <option value="$PROJECT_DIR$/src/WebServer.java" />
         <option value="$PROJECT_DIR$/src/RequestHandler.java" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/app.js" />
       </list>
     </option>
@@ -708,7 +710,7 @@
       <workItem from="1495685007673" duration="8278000" />
       <workItem from="1495780538580" duration="509000" />
       <workItem from="1495781110428" duration="8634000" />
-      <workItem from="1496023695459" duration="1036000" />
+      <workItem from="1496023695459" duration="1834000" />
     </task>
     <task id="LOCAL-00001" summary="change mandatory">
       <created>1495781602403</created>
@@ -759,11 +761,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495789725155</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update app.js">
+      <created>1496024760904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1496024760904</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112138000" />
+    <option name="totallyTimeSpent" value="112936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1105,14 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1146,10 +1147,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="85" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="419" column="57" lean-forward="true" selection-start-line="419" selection-start-column="57" selection-end-line="419" selection-end-column="57" />
+        <state relative-caret-position="334">
+          <caret line="545" column="5" lean-forward="true" selection-start-line="545" selection-start-column="5" selection-end-line="545" selection-end-column="5" />
           <folding />
         </state>
       </provider>
