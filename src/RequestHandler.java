@@ -307,19 +307,19 @@ public class RequestHandler extends Thread {
                 next = it.next();
 
                 if(closeConnection){
-                    if(   !(next.toString().equals(WebServer.clients2[0])) ){
+                    while (it.hasNext()) {
                         DataOutputStream dos = (DataOutputStream) WebServer.clients
                                 .get(next);
                         String str = new String(bytemsg);
                         dos.write(brodcast(str));
                         next = it.next();
-                        DataOutputStream dos2 = (DataOutputStream) WebServer.clients
-                                .get(next);
-                        String str2 = new String(bytemsg);
-                        dos2.write(brodcast(str2));
-                        closeConnection =false;
+
                     }
+
+
+                    closeConnection =false;
                 }
+
 
                 if(server1ToRemote1 ){
                     if(next.toString().equals(WebServer.clients2[1]) ){
