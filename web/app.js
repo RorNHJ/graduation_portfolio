@@ -196,9 +196,9 @@ videoCallButton.addEventListener("click", initiateCall);
 videoCallButton2.addEventListener("click", initiateCall2);
 
 remoteUser.addEventListener("click", getUserFace);
-// endCallButton.addEventListener("click", function (evt) {
-//     wsc.send(JSON.stringify({"closeConnection": true }));
-// });
+endCallButton.addEventListener("click", function (evt) {
+    wsc.send(JSON.stringify({"closeConnection": true }));
+});
 var constraints = window.constraints = {
     audio: true,
     video: true
